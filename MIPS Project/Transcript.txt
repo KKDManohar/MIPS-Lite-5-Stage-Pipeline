@@ -1,0 +1,184 @@
+# //  Questa Sim-64
+# //  Version 2021.3_1 linux_x86_64 Aug 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+cd {/u/yerram/comparch_project}
+make
+# rm -rf work
+# rm -rf transcript
+# vlib work
+# vlog files.svh
+# QuestaSim-64 vlog 2021.3_1 Compiler 2021.08 Aug 15 2021
+# Start time: 15:36:05 on Jun 05,2024
+# vlog files.svh 
+# -- Compiling interface rtl_if
+# -- Compiling package instructions
+# -- Compiling module without_pipeline
+# -- Compiling module pipelined_without_forwarding
+# -- Importing package instructions
+# -- Compiling module pipelined_with_forwarding
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# End time: 15:36:05 on Jun 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -voptargs=+acc top_tb -do "run -all; exit"
+# Reading pref.tcl
+# 
+# 2021.3_1
+# 
+# vsim -c -voptargs="+acc" top_tb -do "run -all; exit" 
+# Start time: 15:36:06 on Jun 05,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim-64
+# //  Version 2021.3_1 linux_x86_64 Aug 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.top_tb(fast)
+# Loading work.rtl_if(fast__1)
+# Loading work.without_pipeline(fast)
+# Loading work.rtl_if(fast__2)
+# Loading work.instructions(fast)
+# Loading work.pipelined_without_forwarding(fast)
+# Loading work.rtl_if(fast__3)
+# Loading work.pipelined_with_forwarding(fast)
+# Loading work.rtl_if(fast__4)
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb/w_p1/file_descriptor_block File: without_pipelining.sv Line: 30
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb/pwf/file_descriptor_block File: pipelined_without_forwarding.sv Line: 34
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fscanf'.
+#    Time: 0 ns  Iteration: 0  Region: /top_tb/pf/file_descriptor_block File: pipelined_with_forwarding.sv Line: 27
+# run -all
+# File Descriptor initialized!
+# File Descriptor initialized!
+# File Descriptor initialized!
+# ** Note: $finish    : top.sv(16)
+#    Time: 34150 ns  Iteration: 1  Instance: /top_tb
+# *************** Without Pipeline Statistics ****************
+# ____________________________________________________________
+# Total Number of Instructions               :         911
+# Arithmetic Instructions                    :         375
+# Logical Instructions                       :          61
+# Memory Access Instructions                 :         300
+# Control Tranfer Instructions               :         175
+# 
+# Final Register Stage:
+# 
+# Program Counter                            :         112
+# 
+# The data of R0                   :           0
+# The data of R11                   :        1044
+# The data of R12                   :        1836
+# The data of R13                   :        2640
+# The data of R14                   :          25
+# The data of R15                   :        -188
+# The data of R16                   :         213
+# The data of R17                   :          29
+# The data of R18                   :        3440
+# The data of R19                   :          -1
+# The data of R20                   :          -2
+# The data of R21                   :          -1
+# The data of R22                   :          76
+# The data of R23                   :           3
+# The data of R24                   :          -1
+# The data of R25                   :           3
+# 
+# The number of Branches taken               :         119
+# The number of clock cycles                 :         911
+# Contents of Memory Address[2400] is :          2
+# Contents of Memory Address[2404] is :          4
+# Contents of Memory Address[2408] is :          6
+# Contents of Memory Address[2412] is :          8
+# Contents of Memory Address[2416] is :         10
+# Contents of Memory Address[2420] is :         12
+# Contents of Memory Address[2424] is :         14
+# Contents of Memory Address[2428] is :         16
+# Contents of Memory Address[2432] is :         18
+# Contents of Memory Address[2436] is :         29
+# Contents of Memory Address[2440] is :         22
+# Contents of Memory Address[2444] is :         24
+# Contents of Memory Address[2448] is :         26
+# Contents of Memory Address[2452] is :         28
+# Contents of Memory Address[2456] is :         30
+# Contents of Memory Address[2460] is :         32
+# Contents of Memory Address[2464] is :         34
+# Contents of Memory Address[2468] is :         36
+# Contents of Memory Address[2472] is :         38
+# Contents of Memory Address[2476] is :         59
+# Contents of Memory Address[2480] is :         42
+# Contents of Memory Address[2484] is :         44
+# Contents of Memory Address[2488] is :         46
+# Contents of Memory Address[2492] is :         48
+# Contents of Memory Address[2496] is :         50
+# Contents of Memory Address[2500] is :         52
+# Contents of Memory Address[2504] is :         54
+# Contents of Memory Address[2508] is :         56
+# Contents of Memory Address[2512] is :         58
+# Contents of Memory Address[2516] is :         89
+# Contents of Memory Address[2520] is :         62
+# Contents of Memory Address[2524] is :         64
+# Contents of Memory Address[2528] is :         66
+# Contents of Memory Address[2532] is :         68
+# Contents of Memory Address[2536] is :         70
+# Contents of Memory Address[2540] is :         72
+# Contents of Memory Address[2544] is :         74
+# Contents of Memory Address[2548] is :         76
+# Contents of Memory Address[2552] is :         78
+# Contents of Memory Address[2556] is :        119
+# Contents of Memory Address[2560] is :         82
+# Contents of Memory Address[2564] is :         84
+# Contents of Memory Address[2568] is :         86
+# Contents of Memory Address[2572] is :         88
+# Contents of Memory Address[2576] is :         90
+# Contents of Memory Address[2580] is :         92
+# Contents of Memory Address[2584] is :         94
+# Contents of Memory Address[2588] is :         96
+# Contents of Memory Address[2592] is :         98
+# Contents of Memory Address[2596] is :        149
+# Contents of Memory Address[2600] is :          2
+# Contents of Memory Address[2604] is :          4
+# Contents of Memory Address[2608] is :          6
+# Contents of Memory Address[2612] is :          8
+# Contents of Memory Address[2616] is :         10
+# Contents of Memory Address[2620] is :         12
+# Contents of Memory Address[2624] is :         14
+# Contents of Memory Address[2628] is :         16
+# Contents of Memory Address[2632] is :         18
+# Contents of Memory Address[2636] is :         29
+# ____________________________________________________________
+# ********Pipelined MIPS without forwarding statistics********
+# ____________________________________________________________
+# Total number of clock cycles without forwarding :        1707
+# Total stall cycles without forwarding           :         554
+# Total number of Data Hazards                    :         307
+# ____________________________________________________________
+# *********Pipelined MIPS with forwarding statistics**********
+# ____________________________________________________________
+# Total number of clock cycles with forwarding    :        1213
+# Total number of stalls with forwarding          :          60
+# Total number of Data Hazards                    :          60
+# End time: 15:36:08 on Jun 05,2024, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 3
